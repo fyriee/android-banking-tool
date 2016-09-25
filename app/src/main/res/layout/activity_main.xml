@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syferlux.syferbankingtools.MainActivity"
+    android:background="@drawable/syferluxtheme"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="107dp"
+        android:id="@+id/imageView3"
+        android:padding="20dp"
+        android:src="@drawable/header"
+        android:layout_gravity="center" />
+
+    <Button android:text="Bunga Tunggal"
+        android:id="@+id/tunggalBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage"
+        android:gravity="left|center">
+    </Button>
+    <Button android:text="Bunga Majemuk"
+        android:id="@+id/majemukBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage2"
+        android:gravity="left|center"
+        android:nestedScrollingEnabled="false">
+    </Button>
+    <Button android:text="Rente Prenumerando"
+        android:id="@+id/prenumBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage3"
+        android:gravity="left|center"
+        android:nestedScrollingEnabled="false">
+    </Button>
+    <Button android:text="Rente Postnumerando"
+        android:id="@+id/postnumBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage4"
+        android:gravity="left|center"
+        android:nestedScrollingEnabled="false">
+    </Button>
+    <Button android:text="Anuitas"
+        android:id="@+id/anuitasBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage5"
+        android:gravity="left|center"
+        android:nestedScrollingEnabled="false">
+    </Button>
+
+    <Button
+        android:text="Angsuran"
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage7"
+        android:gravity="left|center"
+        android:nestedScrollingEnabled="false" />
+
+    <Button android:text="About The Creator of This Apps"
+        android:id="@+id/aboutBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage6"
+        android:gravity="left|center"
+        android:nestedScrollingEnabled="false">
+    </Button>
+
+</LinearLayout>

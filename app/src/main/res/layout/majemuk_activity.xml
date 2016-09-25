@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MajemukActivity"
+    android:background="@drawable/syferluxtheme"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.18">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BungaMajemuk"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical|center"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.18" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Modal(M0)"
+            android:id="@+id/modalLbl"
+            android:contextClickable="false"
+            android:textAlignment="gravity"
+            android:gravity="left|center_vertical"
+            android:layout_weight="0.31"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/modalTxt"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#ffffff"
+            android:background="#20ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.18" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bunga(i%)"
+            android:id="@+id/bungaLbl"
+            android:contextClickable="false"
+            android:textAlignment="gravity"
+            android:gravity="left|center_vertical"
+            android:layout_weight="0.31"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/bungaTxt"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:background="#20ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.18" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Periode(n)"
+            android:id="@+id/blnLbl"
+            android:contextClickable="false"
+            android:textAlignment="gravity"
+            android:gravity="left|center_vertical"
+            android:textColor="#ffffff"
+            android:layout_weight="0.30" />
+
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/keTxt"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:background="#20ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.18"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hitung!"
+            android:id="@+id/hitungBtn"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#c1183a"
+            android:onClick="hitung"
+            android:layout_weight="0.18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.18" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hasil"
+            android:id="@+id/hasilLbl"
+            android:contextClickable="false"
+            android:textAlignment="gravity"
+            android:gravity="left|center_vertical"
+            android:layout_weight="0.30"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:editable="false"
+            android:ems="10"
+            android:id="@+id/hasilTxt"
+            android:layout_weight="0.31"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:background="#20ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
